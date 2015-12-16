@@ -1,0 +1,23 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Include:
+    - Gemfile
+    - Rakefile
+  DisplayCopNames: true
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - "test/**"
+
+Style/Documentation:
+  Enabled: false
+
+Style/FileName:
+  Exclude:
+    - Gemfile
+    - Rakefile
+    - i18n-date.gemspec
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
